@@ -1,0 +1,19 @@
+{
+    "nostros":[
+        {
+            "id":1,
+            "nombre":"juan",
+            "edad":15
+        },
+        {
+            "id":2,
+            "nombre":"Pedro",
+            "edad":15
+        },
+        {
+            "id":3,
+            "nombre":"Oscar",
+            "edad":15
+        }
+    ]
+}

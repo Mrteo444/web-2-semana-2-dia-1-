@@ -1,0 +1,29 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Imagen</th>
+        <th>Nombre</th>
+        <th>Especie</th>
+        <th>info</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(item of personal ; track item ){
+      <tr>
+        <td>
+          <a href="{{item.images.main}}">
+            <img src="{{item.images.main}}" alt="Lights" style="max-width:100px">
+          </a>
+        </td>
+        <td>{{item.name.first}} {{item.name.middle}} {{item.name.last}}</td>
+        <td>{{item.species}}</td>
+        <td>
+            <button [routerLink]="['/galeriaDetalle', item.id]" class="btn btn-info">Detalles de juegos</button>
+          </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+
+  
+  
