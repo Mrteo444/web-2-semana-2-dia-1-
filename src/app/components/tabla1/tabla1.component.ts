@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { NosotrsService } from '../../services/nosotrs.service';
 
 @Component({
   selector: 'app-tabla1',
@@ -8,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './tabla1.component.css'
 })
 export class Tabla1Component {
+  servicio = inject(NosotrsService)
+  personas : any
+
+  ngOnInit(){
+    this.servicio.getNosotros().subscribe( p => {
+      this.personas= p
+    })
+    
+  }
 
 }

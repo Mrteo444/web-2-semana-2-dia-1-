@@ -1,19 +1,42 @@
 {
-    "nostros":[
-        {
-            "id":1,
-            "nombre":"juan",
-            "edad":15
-        },
-        {
-            "id":2,
-            "nombre":"Pedro",
-            "edad":15
-        },
-        {
-            "id":3,
-            "nombre":"Oscar",
-            "edad":15
-        }
-    ]
+  "nostros": [
+    {
+      "id": 1,
+      "nombre": "juan",
+      "edad": 15
+    },
+    {
+      "id": 2,
+      "nombre": "Pedro",
+      "edad": 15
+    },
+    {
+      "id": 3,
+      "nombre": "Oscar",
+      "edad": 15
+    },
+    {
+      "id": "23",
+      "nombre": "sss",
+      "edad": 34
+    },
+    {
+      "id": "44",
+      "nombre": "FF",
+      "edad": 1,
+      "genero": "mascu"
+    },
+    {
+      "id": "66",
+      "nombre": "DD",
+      "edad": 22,
+      "genero": "M"
+    },
+    {
+      "id": "55",
+      "nombre": "mate",
+      "edad": 55,
+      "genero": "M"
+    }
+  ]
 }

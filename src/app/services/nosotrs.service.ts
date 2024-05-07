@@ -14,4 +14,10 @@ export class NosotrsService {
   getNosotros():Observable <any>{
     return this.http.get(this. API_NOSOTROS)
   }
+
+  ////post 
+
+  postNosotros(persona:JSON):Observable <any>{
+    return this.http.post(this.API_NOSOTROS,persona)
+  }
 }

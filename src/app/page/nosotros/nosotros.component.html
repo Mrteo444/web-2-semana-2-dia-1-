@@ -1,17 +1,32 @@
 
 
+<app-formulario></app-formulario>
+
+
+
 
 
 <div class="container">
-    <!-- Loop through each item -->
-    @for(item of nosotros; track item) {
-      <div class="row">
-        <div class="col">
-          <p>Id: {{item.id}}</p>
-          <p>Nombre: {{item.nombre}}</p>
-          <p>Edad: {{item.edad}}</p>
-        </div>
-      </div>
-    }
-  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>GENERO</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(item of nosotros; track item) {
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.edad}}</td>
+        <td>{{item.genero}}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+
   

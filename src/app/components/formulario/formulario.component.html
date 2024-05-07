@@ -1,1 +1,19 @@
-<p>formulario works!</p>
+
+
+<form class="form-group" (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+    <label class="form-label">Ingresar Id</label>
+    <input class="form-control" type="text" name="id" [(ngModel)]="id">
+    <label class="form-label">Ingresaer Nombre</label>
+    <input class="form-control" type="text" name="nombre" [(ngModel)]="nombre">
+    <label class="form-label">Ingresar edad</label>
+    <input class="form-control" type="number" name="edad" [(ngModel)]="edad">
+    <label class="form-label">Genero</label>
+    <select   name="genero" [(ngModel)]="genero" class="form-control">
+        <option value="M">M</option>
+        <option value="F">F</option>
+
+    </select>
+   
+
+    <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
