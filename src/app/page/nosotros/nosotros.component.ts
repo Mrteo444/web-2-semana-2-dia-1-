@@ -14,6 +14,7 @@ import { Tabla1Component } from "../../components/tabla1/tabla1.component";
 export class NosotrosComponent {
 
   servicios = inject(NosotrsService)
+  persona:any
 
   nosotros: any 
 
@@ -24,5 +25,12 @@ export class NosotrosComponent {
    
     
   }
+
+  eliminar(id:any){
+    this.servicios.deleteNosotrosID(id).subscribe()
+    window.location.reload()
+  }
+
+
 
 }
